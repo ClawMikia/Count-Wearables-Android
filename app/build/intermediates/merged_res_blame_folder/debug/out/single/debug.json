@@ -12,6 +12,10 @@
         "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\xml\\file_paths.xml"
     },
     {
+        "merged": "com.countwearables.app-merged_res-48:/layout_activity_detail.xml.flat",
+        "source": "com.countwearables.app-main-50:/layout/activity_detail.xml"
+    },
+    {
         "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
@@ -40,8 +44,16 @@
         "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\drawable\\ic_clothing_placeholder.xml"
     },
     {
+        "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\drawable_app_icon.png.flat",
+        "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\drawable\\app_icon.png"
+    },
+    {
         "merged": "com.countwearables.app-merged_res-48:/drawable_app_icon.png.flat",
         "source": "com.countwearables.app-main-50:/drawable/app_icon.png"
+    },
+    {
+        "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\layout_activity_register.xml.flat",
+        "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\layout\\activity_register.xml"
     },
     {
         "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\layout_activity_add_edit_item.xml.flat",
@@ -50,9 +62,5 @@
     {
         "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\layout_item_clothing.xml.flat",
         "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\layout\\item_clothing.xml"
-    },
-    {
-        "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-merged_res-48:\\layout_activity_register.xml.flat",
-        "source": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-main-50:\\layout\\activity_register.xml"
     }
 ]

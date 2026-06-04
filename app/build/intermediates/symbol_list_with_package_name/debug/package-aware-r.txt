@@ -2162,6 +2162,7 @@ color primary
 color primary_dark
 color primary_dark_material_dark
 color primary_dark_material_light
+color primary_glow
 color primary_light
 color primary_material_dark
 color primary_material_light
@@ -2173,6 +2174,7 @@ color ripple_material_dark
 color ripple_material_light
 color secondary
 color secondary_dark
+color secondary_glow
 color secondary_light
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
@@ -2180,6 +2182,7 @@ color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
 color success
 color surface
+color surface_bright
 color surface_variant
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -2187,7 +2190,11 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color tertiary
+color tertiary_dark
 color text_hint
+color text_neon_cyan
+color text_neon_pink
 color text_on_primary
 color text_on_secondary
 color text_primary
@@ -4597,6 +4604,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style ShapeAppearance_CountWearables_MediumComponent
 style ShapeAppearance_M3_Comp_Badge_Large_Shape
 style ShapeAppearance_M3_Comp_Badge_Shape
 style ShapeAppearance_M3_Comp_BottomAppBar_Container_Shape
@@ -4802,7 +4810,7 @@ style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
 style Theme_CountWearables
-style Theme_CountWearables_NoActionBar
+style Theme_CountWearables_Dialog
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -5072,6 +5080,7 @@ style Widget_AppCompat_Toolbar
 style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
+style Widget_CountWearables_Button_Outlined
 style Widget_CountWearables_Button_Primary
 style Widget_CountWearables_Button_Secondary
 style Widget_CountWearables_CardView

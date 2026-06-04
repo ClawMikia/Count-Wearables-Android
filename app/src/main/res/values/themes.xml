@@ -1,75 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme -->
-    <style name="Theme.CountWearables" parent="Theme.Material3.Light.NoActionBar">
+    <!-- Cyberpunk Alien Dark Theme -->
+    <style name="Theme.CountWearables" parent="Theme.Material3.Dark.NoActionBar">
         <!-- Primary brand color -->
         <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primary_dark</item>
         <item name="colorOnPrimary">@color/text_on_primary</item>
-        
+        <item name="colorPrimaryContainer">@color/surface_variant</item>
+        <item name="colorOnPrimaryContainer">@color/primary</item>
+
         <!-- Secondary brand color -->
         <item name="colorSecondary">@color/secondary</item>
-        <item name="colorSecondaryVariant">@color/secondary_dark</item>
-        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/secondary</item>
         
-        <!-- Status bar color -->
-        <item name="android:statusBarColor">@color/primary_dark</item>
-        <item name="android:navigationBarColor">@color/surface</item>
-        
-        <!-- Background -->
+        <!-- Background & Surface -->
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
-        
-        <!-- Surface -->
         <item name="colorSurface">@color/surface</item>
         <item name="colorOnSurface">@color/text_primary</item>
-        
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
+        <!-- Status & Navigation Bar -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
         <!-- Error -->
         <item name="colorError">@color/error</item>
         <item name="colorOnError">@color/white</item>
+
+        <!-- Dialog & Alert Styles -->
+        <item name="alertDialogTheme">@style/Theme.CountWearables.Dialog</item>
+        <item name="android:datePickerDialogTheme">@style/Theme.CountWearables.Dialog</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.CountWearables.Dialog</item>
     </style>
-    
-    <!-- Theme without action bar for splash or full screen -->
-    <style name="Theme.CountWearables.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+
+    <!-- Dialog Style -->
+    <style name="Theme.CountWearables.Dialog" parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.CountWearables.MediumComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.CountWearables.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">4dp</item> <!-- Cyberpunk often uses sharper corners -->
     </style>
     
     <!-- Button Styles -->
     <style name="Widget.CountWearables.Button.Primary" parent="Widget.Material3.Button">
         <item name="android:backgroundTint">@color/primary</item>
         <item name="android:textColor">@color/text_on_primary</item>
-        <item name="cornerRadius">12dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
     </style>
     
     <style name="Widget.CountWearables.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
         <item name="android:backgroundTint">@color/surface_variant</item>
-        <item name="android:textColor">@color/text_primary</item>
-        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="strokeColor">@color/secondary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.CountWearables.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">2dp</item>
     </style>
     
     <!-- Text Input Layout Style -->
     <style name="Widget.CountWearables.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">@color/primary</item>
-        <item name="boxStrokeWidth">2dp</item>
-        <item name="boxCornerRadiusTopStart">8dp</item>
-        <item name="boxCornerRadiusTopEnd">8dp</item>
-        <item name="boxCornerRadiusBottomStart">8dp</item>
-        <item name="boxCornerRadiusBottomEnd">8dp</item>
-        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">2dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">2dp</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
     </style>
     
     <!-- Card Style -->
     <style name="Widget.CountWearables.CardView" parent="Widget.Material3.CardView.Filled">
         <item name="cardBackgroundColor">@color/surface</item>
-        <item name="cardCornerRadius">12dp</item>
-        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="strokeWidth">1dp</item>
     </style>
     
     <!-- Toolbar Style -->
     <style name="Widget.CountWearables.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">@color/primary</item>
-        <item name="titleTextColor">@color/text_on_primary</item>
-        <item name="navigationIconTint">@color/text_on_primary</item>
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/primary</item>
+        <item name="navigationIconTint">@color/primary</item>
     </style>
 </resources>

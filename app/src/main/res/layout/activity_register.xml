@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
+    android:background="@color/background"
     tools:context=".ui.RegisterActivity">
 
     <TextView
@@ -12,10 +13,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="@string/app_name"
+        android:text="REGISTRATION_NODE"
         android:textColor="@color/primary"
         android:textSize="28sp"
         android:textStyle="bold"
+        android:letterSpacing="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,9 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Create your account"
-        android:textColor="@color/text_secondary"
-        android:textSize="16sp"
+        android:text="ENLIST_NEW_OPERATOR"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textAppTitle" />
@@ -38,7 +41,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:hint="@string/username"
+        android:hint="OPERATOR_ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textSubtitle">
@@ -48,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
+            android:textColor="@color/text_primary"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,8 +61,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/password"
+        android:hint="SECURE_PHRASE"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputUsername">
@@ -68,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:textColor="@color/text_primary"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,8 +83,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/confirm_password"
+        android:hint="CONFIRM_SECURE_PHRASE"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputPassword">
@@ -88,6 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:textColor="@color/text_primary"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,12 +105,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textColor="@color/error"
-        android:textSize="14sp"
+        android:textSize="12sp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputConfirmPassword"
-        tools:text="Error message"
+        tools:text="ERROR: DATA_MISMATCH"
         tools:visibility="visible" />
 
     <com.google.android.material.button.MaterialButton
@@ -111,8 +119,8 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
-        android:text="@string/sign_up"
-        android:textSize="16sp"
+        android:text="COMMIT_REGISTRATION"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textError" />
@@ -122,6 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:indeterminateTint="@color/primary"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,9 +145,10 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:focusable="true"
-        android:text="@string/already_have_account"
-        android:textColor="@color/primary"
-        android:textSize="14sp"
+        android:text="EXISTING_OPERATOR_RETURN"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -18,87 +18,100 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary"
+            android:background="@color/background"
             app:navigationIcon="@android:drawable/ic_menu_revert"
-            app:titleTextColor="@color/white"
-            tools:title="Add Item" />
+            app:navigationIconTint="@color/primary"
+            app:titleTextColor="@color/primary"
+            tools:title="DATA_INPUT_NODE" />
 
-        <!-- Item Image -->
-        <FrameLayout
+        <!-- Item Image with Frame -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginTop="16dp">
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="2dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp">
 
-            <ImageView
-                android:id="@+id/ivItem"
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                android:src="@android:drawable/ic_menu_gallery"
-                android:background="@color/surface_variant"
-                android:contentDescription="@string/item_name" />
+                android:layout_height="match_parent">
 
-            <ImageButton
-                android:id="@+id/btnTakePhoto"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_gravity="bottom|end"
-                android:layout_margin="8dp"
-                android:background="@drawable/circle_background"
-                android:contentDescription="@string/take_photo"
-                android:src="@android:drawable/ic_menu_camera"
-                app:tint="@color/white" />
-        </FrameLayout>
+                <ImageView
+                    android:id="@+id/ivItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:background="@color/surface_variant"
+                    android:contentDescription="@string/item_name" />
+
+                <ImageButton
+                    android:id="@+id/btnTakePhoto"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_margin="8dp"
+                    android:background="@color/primary"
+                    android:contentDescription="@string/take_photo"
+                    android:src="@android:drawable/ic_menu_camera"
+                    app:tint="@color/black" />
+            </FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Item Name -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputName"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            style="@style/Widget.CountWearables.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:hint="@string/item_name">
+            android:layout_marginTop="24dp"
+            android:hint="IDENTIFIER_NAME">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
+                android:textColor="@color/text_primary"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Category Dropdown -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputCategory"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            style="@style/Widget.CountWearables.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:hint="@string/category"
-            app:endIconMode="dropdown_menu">
+            android:hint="SECTOR_CLASSIFICATION"
+            app:endIconMode="dropdown_menu"
+            app:endIconTint="@color/primary">
 
             <AutoCompleteTextView
                 android:id="@+id/editCategory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="none"
+                android:textColor="@color/text_primary"
                 android:completionThreshold="0" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Quantity -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputQuantity"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            style="@style/Widget.CountWearables.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:hint="@string/quantity">
+            android:hint="UNIT_QUANTITY">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editQuantity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
+                android:textColor="@color/text_primary"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -112,37 +125,40 @@
             <!-- Size Dropdown -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputSize"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                style="@style/Widget.CountWearables.TextInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
-                android:hint="@string/size"
-                app:endIconMode="dropdown_menu">
+                android:hint="DIM_SCALE"
+                app:endIconMode="dropdown_menu"
+                app:endIconTint="@color/primary">
 
                 <AutoCompleteTextView
                     android:id="@+id/editSize"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
+                    android:textColor="@color/text_primary"
                     android:completionThreshold="0" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <!-- Color -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/textInputColor"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                style="@style/Widget.CountWearables.TextInputLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
-                android:hint="@string/color">
+                android:hint="CHROMA">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/editColor"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:textColor="@color/text_primary"
                     android:maxLines="1" />
             </com.google.android.material.textfield.TextInputLayout>
         </LinearLayout>
@@ -150,12 +166,13 @@
         <!-- Notes -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/textInputNotes"
-            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            style="@style/Widget.CountWearables.TextInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:hint="@string/notes"
+            android:hint="METADATA_NOTES"
             app:counterEnabled="true"
+            app:counterTextColor="@color/text_secondary"
             app:counterMaxLength="500">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -164,6 +181,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="top"
                 android:inputType="textMultiLine"
+                android:textColor="@color/text_primary"
                 android:maxLines="4"
                 android:minLines="3" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -175,30 +193,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
             android:textColor="@color/error"
-            android:textSize="14sp"
+            android:textSize="12sp"
+            android:textStyle="bold"
             android:visibility="gone"
-            tools:text="Error message"
+            tools:text="ERROR: INVALID_DATA_STRUCTURE"
             tools:visibility="visible" />
 
         <!-- Save Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnSave"
-            style="@style/Widget.MaterialComponents.Button"
+            style="@style/Widget.CountWearables.Button.Primary"
             android:layout_width="match_parent"
             android:layout_height="56dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/save"
-            android:textSize="16sp" />
+            android:layout_marginTop="32dp"
+            android:text="COMMIT_CHANGES"
+            android:textSize="14sp" />
 
-        <!-- Delete Button (only visible in edit mode) -->
+        <!-- Delete Button -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnDelete"
-            style="@style/Widget.Material3.Button.TextButton"
+            style="@style/Widget.CountWearables.Button.Outlined"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/delete"
+            android:layout_marginTop="16dp"
+            android:text="PURGE_RECORD"
             android:textColor="@color/error"
+            app:strokeColor="@color/error"
             android:visibility="gone"
             tools:visibility="visible" />
 

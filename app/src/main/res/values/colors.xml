@@ -1,52 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Primary Colors -->
-    <color name="primary">#6366F1</color>
-    <color name="primary_dark">#4F46E5</color>
-    <color name="primary_light">#A5B4FC</color>
+    <!-- Cyberpunk Alien Dark Palette -->
+    <!-- Deep Space Backgrounds -->
+    <color name="background">#1A1A2E</color>
+    <color name="surface">#0F0F1A</color>
+    <color name="surface_variant">#1A1A2E</color>
+    <color name="surface_bright">#242444</color>
     
-    <!-- Secondary Colors -->
-    <color name="secondary">#F59E0B</color>
-    <color name="secondary_dark">#D97706</color>
-    <color name="secondary_light">#FCD34D</color>
+    <!-- Neon Primary - Alien Cyan -->
+    <color name="primary">#00F2FF</color>
+    <color name="primary_dark">#008A91</color>
+    <color name="primary_light">#80F9FF</color>
+    <color name="primary_glow">#4D00F2FF</color>
     
-    <!-- Background Colors -->
-    <color name="background">#F8FAFC</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="surface_variant">#F1F5F9</color>
+    <!-- Neon Secondary - Cyber Pink -->
+    <color name="secondary">#FF00E0</color>
+    <color name="secondary_dark">#B3009D</color>
+    <color name="secondary_light">#FF80F0</color>
+    <color name="secondary_glow">#4DFF00E0</color>
     
-    <!-- Text Colors -->
-    <color name="text_primary">#1E293B</color>
-    <color name="text_secondary">#64748B</color>
-    <color name="text_hint">#94A3B8</color>
-    <color name="text_on_primary">#FFFFFF</color>
-    <color name="text_on_secondary">#000000</color>
+    <!-- Neon Tertiary - Toxic Green -->
+    <color name="tertiary">#0AD114</color>
+    <color name="tertiary_dark">#07910E</color>
+
+    <!-- Text Colors - High Contrast Neons & Whites -->
+    <color name="text_primary">#E0E0FF</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_hint">#475569</color>
+    <color name="text_on_primary">#05050A</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_neon_cyan">#00F2FF</color>
+    <color name="text_neon_pink">#FF00E0</color>
     
     <!-- Status Colors -->
-    <color name="success">#22C55E</color>
-    <color name="error">#EF4444</color>
-    <color name="warning">#F59E0B</color>
-    <color name="info">#3B82F6</color>
+    <color name="success">#0AD114</color>
+    <color name="error">#FF3131</color>
+    <color name="warning">#F0F600</color>
+    <color name="info">#00F2FF</color>
     
-    <!-- Border Colors -->
-    <color name="border">#E2E8F0</color>
-    <color name="border_focused">#6366F1</color>
+    <!-- Border & Detail Colors -->
+    <color name="border">#2D2D5A</color>
+    <color name="border_focused">#00F2FF</color>
+    <color name="divider">#1A1A2E</color>
     
-    <!-- Additional Colors -->
+    <!-- Standard Colors -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="transparent">#00000000</color>
-    <color name="divider">#E2E8F0</color>
-    
-    <!-- Category Colors -->
-    <color name="category_topwear">#3B82F6</color>
-    <color name="category_bottomwear">#10B981</color>
-    <color name="category_outerwear">#8B5CF6</color>
-    <color name="category_dresses">#EC4899</color>
-    <color name="category_footwear">#F59E0B</color>
-    <color name="category_accessories">#06B6D4</color>
-    <color name="category_sportswear">#EF4444</color>
-    <color name="category_sleepwear">#6366F1</color>
-    <color name="category_swimwear">#14B8A6</color>
-    <color name="category_other">#6B7280</color>
+
+    <!-- Category Colors (Cyberpunk Edition) -->
+    <color name="category_topwear">#00F2FF</color>
+    <color name="category_bottomwear">#0AD114</color>
+    <color name="category_outerwear">#7000FF</color>
+    <color name="category_dresses">#FF00E0</color>
+    <color name="category_footwear">#F0F600</color>
+    <color name="category_accessories">#00E5FF</color>
+    <color name="category_sportswear">#FF3131</color>
+    <color name="category_sleepwear">#4D00FF</color>
+    <color name="category_swimwear">#00FFC2</color>
+    <color name="category_other">#64748B</color>
 </resources>

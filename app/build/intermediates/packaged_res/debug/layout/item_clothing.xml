@@ -5,24 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="2dp">
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/border"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/surface">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="12dp">
+        android:padding="8dp">
 
-        <!-- Item Image -->
-        <ImageView
-            android:id="@+id/ivItem"
+        <!-- Item Image with Neon Border -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:scaleType="centerCrop"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:background="@color/surface_variant"
-            android:contentDescription="@string/item_name" />
+            app:cardCornerRadius="1dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp">
+
+            <ImageView
+                android:id="@+id/ivItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@color/surface_variant"
+                android:contentDescription="@string/item_name" />
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Item Details -->
         <LinearLayout
@@ -38,24 +49,26 @@
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
                 android:maxLines="1"
-                android:textColor="@color/text_primary"
+                android:textColor="@color/text_neon_cyan"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                tools:text="Blue T-Shirt" />
+                android:letterSpacing="0.05"
+                tools:text="BLUE_VEST_PRO" />
 
             <TextView
                 android:id="@+id/tvCategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:textColor="@color/primary"
-                android:textSize="12sp"
-                tools:text="Topwear" />
+                android:layout_marginTop="2dp"
+                android:textColor="@color/secondary"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                tools:text="SECTOR: TOPWEAR" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="8dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -64,8 +77,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/text_secondary"
-                    android:textSize="12sp"
-                    tools:text="Size: M" />
+                    android:textSize="11sp"
+                    tools:text="DIM: M" />
 
                 <TextView
                     android:id="@+id/tvColor"
@@ -73,8 +86,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="@color/text_secondary"
-                    android:textSize="12sp"
-                    tools:text="Blue" />
+                    android:textSize="11sp"
+                    tools:text="CHROMA: BLUE" />
             </LinearLayout>
 
             <TextView
@@ -82,9 +95,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
-                android:textColor="@color/text_secondary"
-                android:textSize="12sp"
-                tools:text="Qty: 2" />
+                android:textColor="@color/primary"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                tools:text="UNITS: 02" />
 
         </LinearLayout>
 

@@ -5,17 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="24dp"
+    android:background="@color/background"
     tools:context=".ui.LoginActivity">
 
     <TextView
         android:id="@+id/textAppTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="@string/app_name"
+        android:layout_marginTop="80dp"
+        android:text="COUNT_WEARABLES"
         android:textColor="@color/primary"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:letterSpacing="0.1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,9 +27,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Track your wardrobe"
-        android:textColor="@color/text_secondary"
-        android:textSize="16sp"
+        android:text="CENTRAL_WARDROBE_DATABASE"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textAppTitle" />
@@ -38,7 +41,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:hint="@string/username"
+        android:hint="OPERATOR_ID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textSubtitle">
@@ -48,6 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
+            android:textColor="@color/text_primary"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,8 +61,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:hint="@string/password"
+        android:hint="SECURE_PHRASE"
         app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/primary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputUsername">
@@ -68,6 +73,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:textColor="@color/text_primary"
             android:maxLines="1" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -77,12 +83,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textColor="@color/error"
-        android:textSize="14sp"
+        android:textSize="12sp"
+        android:textStyle="bold"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textInputPassword"
-        tools:text="Invalid credentials"
+        tools:text="ERROR: AUTHENTICATION_FAILED"
         tools:visibility="visible" />
 
     <com.google.android.material.button.MaterialButton
@@ -91,8 +98,8 @@
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginTop="32dp"
-        android:text="@string/login"
-        android:textSize="16sp"
+        android:text="INITIALIZE_SESSION"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textError" />
@@ -102,6 +109,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:indeterminateTint="@color/primary"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,9 +124,10 @@
         android:layout_marginBottom="32dp"
         android:clickable="true"
         android:focusable="true"
-        android:text="@string/don_t_have_account"
-        android:textColor="@color/primary"
-        android:textSize="14sp"
+        android:text="REGISTER_NEW_OPERATOR"
+        android:textColor="@color/secondary"
+        android:textSize="12sp"
+        android:letterSpacing="0.05"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

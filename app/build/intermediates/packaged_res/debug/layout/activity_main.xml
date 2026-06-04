@@ -9,15 +9,16 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/background">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary"
-            app:title="@string/my_wardrobe"
-            app:titleTextColor="@color/white" />
+            android:background="@color/background"
+            app:title="WARDROBE_INTERFACE"
+            app:titleTextColor="@color/primary" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -27,13 +28,15 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Search Bar -->
+        <!-- Search Bar with Neon Border -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="2dp"
+            app:strokeColor="@color/border"
+            app:strokeWidth="1dp"
+            app:cardBackgroundColor="@color/surface">
 
             <EditText
                 android:id="@+id/editSearch"
@@ -42,9 +45,11 @@
                 android:background="@android:color/transparent"
                 android:drawableStart="@android:drawable/ic_menu_search"
                 android:drawablePadding="8dp"
-                android:hint="@string/search"
+                android:drawableTint="@color/primary"
+                android:hint="SEARCH_SECTOR..."
                 android:inputType="text"
                 android:padding="8dp"
+                android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_hint" />
         </com.google.android.material.card.MaterialCardView>
 
@@ -55,8 +60,10 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
-            app:cardCornerRadius="8dp"
-            app:cardElevation="2dp">
+            app:cardCornerRadius="2dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp"
+            app:cardBackgroundColor="@color/surface">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -83,10 +90,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/total_items"
+                        android:text="ITEMS_COUNT"
                         android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
+                        android:textSize="10sp"
+                        android:letterSpacing="0.1" />
                 </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/divider" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -107,15 +120,16 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/total_quantity"
+                        android:text="TOTAL_UNITS"
                         android:textColor="@color/text_secondary"
-                        android:textSize="12sp" />
+                        android:textSize="10sp"
+                        android:letterSpacing="0.1" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0.5"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -126,12 +140,12 @@
                         android:background="?attr/selectableItemBackgroundBorderless"
                         android:contentDescription="@string/filter"
                         android:src="@android:drawable/ic_menu_sort_by_size"
-                        app:tint="@color/text_secondary" />
+                        android:tint="@color/primary" />
                 </LinearLayout>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- RecyclerView for clothing items -->
+        <!-- RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
@@ -154,25 +168,18 @@
             <ImageView
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:alpha="0.5"
+                android:alpha="0.2"
                 android:src="@android:drawable/ic_menu_gallery"
-                app:tint="@color/text_hint" />
+                android:tint="@color/primary" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/no_items"
+                android:text="NO_DATA_FOUND"
                 android:textColor="@color/text_secondary"
-                android:textSize="18sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@string/add_first_item"
-                android:textColor="@color/text_hint"
-                android:textSize="14sp" />
+                android:textSize="16sp"
+                android:letterSpacing="0.2" />
         </LinearLayout>
 
     </LinearLayout>
@@ -185,8 +192,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|end"
         android:layout_margin="8dp"
-        android:text="@string/logout"
-        android:textColor="@color/white" />
+        android:text="DISCONNECT"
+        android:textColor="@color/secondary"
+        android:textSize="10sp" />
 
     <!-- FAB for adding items -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -194,9 +202,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
+        android:layout_margin="24dp"
         android:contentDescription="@string/add_item"
         android:src="@android:drawable/ic_input_add"
-        app:tint="@color/white" />
+        app:tint="@color/black"
+        app:backgroundTint="@color/primary"
+        app:elevation="8dp" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

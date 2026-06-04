@@ -9,17 +9,18 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/background">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/primary"
+            android:background="@color/background"
             app:navigationIcon="@android:drawable/ic_menu_revert"
-            app:navigationContentDescription="@string/edit"
-            app:titleTextColor="@color/white"
-            tools:title="Item Details" />
+            app:navigationIconTint="@color/primary"
+            app:titleTextColor="@color/primary"
+            tools:title="ITEM_DECRYPTED" />
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -29,15 +30,25 @@
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <!-- Item Image -->
-        <ImageView
-            android:id="@+id/ivItem"
+        <!-- Item Image with Neon Border -->
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:scaleType="centerCrop"
-            android:src="@android:drawable/ic_menu_gallery"
-            android:background="@color/surface_variant"
-            android:contentDescription="@string/item_name" />
+            android:layout_margin="16dp"
+            app:cardCornerRadius="2dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp"
+            app:cardElevation="8dp">
+
+            <ImageView
+                android:id="@+id/ivItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_gallery"
+                android:background="@color/surface_variant"
+                android:contentDescription="@string/item_name" />
+        </com.google.android.material.card.MaterialCardView>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -54,10 +65,11 @@
                     android:id="@+id/tvItemName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/text_primary"
-                    android:textSize="24sp"
+                    android:textColor="@color/text_neon_cyan"
+                    android:textSize="28sp"
                     android:textStyle="bold"
-                    tools:text="Blue T-Shirt" />
+                    android:letterSpacing="0.1"
+                    tools:text="NEURAL T-SHIRT" />
 
                 <!-- Category Chip -->
                 <com.google.android.material.chip.Chip
@@ -65,23 +77,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     app:chipBackgroundColor="@color/primary"
-                    tools:text="Topwear" />
+                    app:shapeAppearanceOverlay="@style/ShapeAppearance.CountWearables.MediumComponent"
+                    tools:text="SECTOR: TOPWEAR" />
 
                 <!-- Details Card -->
                 <com.google.android.material.card.MaterialCardView
+                    style="@style/Widget.CountWearables.CardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="2dp">
+                    android:layout_marginTop="24dp"
+                    app:strokeColor="@color/border">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
                         android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="DATA_LOG"
+                            android:textColor="@color/secondary"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="12dp" />
 
                         <!-- Quantity -->
                         <LinearLayout
@@ -93,92 +115,108 @@
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/quantity"
+                                android:text="QUANTITY_UNIT"
                                 android:textColor="@color/text_secondary"
-                                android:textSize="14sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:id="@+id/tvQuantity"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/text_primary"
+                                android:textColor="@color/primary"
                                 android:textSize="14sp"
                                 android:textStyle="bold"
-                                tools:text="2" />
+                                tools:text="02" />
                         </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider"
+                            android:layout_marginVertical="12dp" />
 
                         <!-- Size -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/size"
+                                android:text="DIMENSION_SCALE"
                                 android:textColor="@color/text_secondary"
-                                android:textSize="14sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:id="@+id/tvSize"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/text_primary"
+                                android:textColor="@color/primary"
                                 android:textSize="14sp"
                                 android:textStyle="bold"
-                                tools:text="M" />
+                                tools:text="M-01" />
                         </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider"
+                            android:layout_marginVertical="12dp" />
 
                         <!-- Color -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/color"
+                                android:text="CHROMA_VALUE"
                                 android:textColor="@color/text_secondary"
-                                android:textSize="14sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:id="@+id/tvColor"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/text_primary"
+                                android:textColor="@color/primary"
                                 android:textSize="14sp"
                                 android:textStyle="bold"
-                                tools:text="Blue" />
+                                tools:text="NEON_BLUE" />
                         </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/divider"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp" />
 
                         <!-- Date Added -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
                             android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="0dp"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:text="@string/date_added"
+                                android:text="TIMESTAMP_INIT"
                                 android:textColor="@color/text_secondary"
-                                android:textSize="14sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:id="@+id/tvDateAdded"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/text_primary"
+                                android:textColor="@color/primary"
                                 android:textSize="14sp"
-                                tools:text="Jan 1, 2024" />
+                                tools:text="2024.01.01_00:00" />
                         </LinearLayout>
 
                     </LinearLayout>
@@ -187,12 +225,12 @@
                 <!-- Notes Card -->
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cardNotes"
+                    style="@style/Widget.CountWearables.CardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
+                    app:strokeColor="@color/border"
                     android:visibility="gone"
-                    app:cardCornerRadius="12dp"
-                    app:cardElevation="2dp"
                     tools:visibility="visible">
 
                     <LinearLayout
@@ -204,9 +242,9 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="@string/notes"
-                            android:textColor="@color/text_secondary"
-                            android:textSize="14sp"
+                            android:text="METADATA_NOTES"
+                            android:textColor="@color/secondary"
+                            android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -216,7 +254,7 @@
                             android:layout_marginTop="8dp"
                             android:textColor="@color/text_primary"
                             android:textSize="14sp"
-                            tools:text="This is a note about the clothing item." />
+                            tools:text="Sample metadata notes decrypting..." />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -225,7 +263,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="32dp"
                     android:orientation="horizontal">
 
                     <com.google.android.material.button.MaterialButton
@@ -235,18 +273,18 @@
                         android:layout_height="56dp"
                         android:layout_marginEnd="8dp"
                         android:layout_weight="1"
-                        android:text="@string/edit" />
+                        android:text="MODIFY" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnDelete"
-                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        style="@style/Widget.CountWearables.Button.Outlined"
                         android:layout_width="0dp"
                         android:layout_height="56dp"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
-                        android:text="@string/delete"
+                        android:text="PURGE"
                         app:strokeColor="@color/error"
-                        app:strokeWidth="2dp" />
+                        android:textColor="@color/error" />
 
                 </LinearLayout>
 

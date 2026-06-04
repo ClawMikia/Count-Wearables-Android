@@ -1,170 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background">#F8FAFC</color>
+    <color name="background">#1A1A2E</color>
     <color name="black">#000000</color>
-    <color name="border">#E2E8F0</color>
-    <color name="border_focused">#6366F1</color>
-    <color name="category_accessories">#06B6D4</color>
-    <color name="category_bottomwear">#10B981</color>
-    <color name="category_dresses">#EC4899</color>
-    <color name="category_footwear">#F59E0B</color>
-    <color name="category_other">#6B7280</color>
-    <color name="category_outerwear">#8B5CF6</color>
-    <color name="category_sleepwear">#6366F1</color>
-    <color name="category_sportswear">#EF4444</color>
-    <color name="category_swimwear">#14B8A6</color>
-    <color name="category_topwear">#3B82F6</color>
-    <color name="divider">#E2E8F0</color>
-    <color name="error">#EF4444</color>
-    <color name="info">#3B82F6</color>
-    <color name="primary">#6366F1</color>
-    <color name="primary_dark">#4F46E5</color>
-    <color name="primary_light">#A5B4FC</color>
-    <color name="secondary">#F59E0B</color>
-    <color name="secondary_dark">#D97706</color>
-    <color name="secondary_light">#FCD34D</color>
-    <color name="success">#22C55E</color>
-    <color name="surface">#FFFFFF</color>
-    <color name="surface_variant">#F1F5F9</color>
-    <color name="text_hint">#94A3B8</color>
-    <color name="text_on_primary">#FFFFFF</color>
-    <color name="text_on_secondary">#000000</color>
-    <color name="text_primary">#1E293B</color>
-    <color name="text_secondary">#64748B</color>
+    <color name="border">#2D2D5A</color>
+    <color name="border_focused">#00F2FF</color>
+    <color name="category_accessories">#00E5FF</color>
+    <color name="category_bottomwear">#0AD114</color>
+    <color name="category_dresses">#FF00E0</color>
+    <color name="category_footwear">#F0F600</color>
+    <color name="category_other">#64748B</color>
+    <color name="category_outerwear">#7000FF</color>
+    <color name="category_sleepwear">#4D00FF</color>
+    <color name="category_sportswear">#FF3131</color>
+    <color name="category_swimwear">#00FFC2</color>
+    <color name="category_topwear">#00F2FF</color>
+    <color name="divider">#1A1A2E</color>
+    <color name="error">#FF3131</color>
+    <color name="info">#00F2FF</color>
+    <color name="primary">#00F2FF</color>
+    <color name="primary_dark">#008A91</color>
+    <color name="primary_glow">#4D00F2FF</color>
+    <color name="primary_light">#80F9FF</color>
+    <color name="secondary">#FF00E0</color>
+    <color name="secondary_dark">#B3009D</color>
+    <color name="secondary_glow">#4DFF00E0</color>
+    <color name="secondary_light">#FF80F0</color>
+    <color name="success">#0AD114</color>
+    <color name="surface">#0F0F1A</color>
+    <color name="surface_bright">#242444</color>
+    <color name="surface_variant">#1A1A2E</color>
+    <color name="tertiary">#0AD114</color>
+    <color name="tertiary_dark">#07910E</color>
+    <color name="text_hint">#475569</color>
+    <color name="text_neon_cyan">#00F2FF</color>
+    <color name="text_neon_pink">#FF00E0</color>
+    <color name="text_on_primary">#05050A</color>
+    <color name="text_on_secondary">#FFFFFF</color>
+    <color name="text_primary">#E0E0FF</color>
+    <color name="text_secondary">#94A3B8</color>
     <color name="transparent">#00000000</color>
-    <color name="warning">#F59E0B</color>
+    <color name="warning">#F0F600</color>
     <color name="white">#FFFFFF</color>
-    <string name="accessories">Accessories</string>
-    <string name="add_first_item">Tap + to add your first item</string>
-    <string name="add_item">Add Item</string>
-    <string name="all">All</string>
-    <string name="already_have_account">Already have an account?</string>
-    <string name="app_name">Count Wearables</string>
-    <string name="bottomwear">Bottomwear</string>
-    <string name="camera_permission_required">Camera permission is required to take photos</string>
-    <string name="cancel">Cancel</string>
-    <string name="category">Category</string>
-    <string name="choose_from_gallery">Choose from Gallery</string>
-    <string name="color">Color</string>
-    <string name="confirm_delete">Are you sure you want to delete this item?</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="date_added">Date Added</string>
-    <string name="delete">Delete</string>
-    <string name="delete_confirmation">This action cannot be undone.</string>
-    <string name="description">Description</string>
-    <string name="don_t_have_account">Don\'t have an account?</string>
-    <string name="dresses">Dresses</string>
-    <string name="edit">Edit</string>
-    <string name="field_required">This field is required</string>
-    <string name="filter">Filter</string>
-    <string name="footwear">Footwear</string>
-    <string name="forgot_password">Forgot Password?</string>
-    <string name="invalid_credentials">Invalid username or password</string>
-    <string name="item_deleted">Item deleted</string>
-    <string name="item_name">Item Name</string>
-    <string name="item_saved">Item saved successfully</string>
-    <string name="login">Login</string>
-    <string name="login_failed">Login failed</string>
-    <string name="login_successful">Login successful</string>
-    <string name="logout">Logout</string>
-    <string name="my_wardrobe">My Wardrobe</string>
-    <string name="no">No</string>
-    <string name="no_items">No clothing items yet</string>
-    <string name="notes">Notes</string>
-    <string name="one_size">One Size</string>
-    <string name="other">Other</string>
-    <string name="outerwear">Outerwear</string>
-    <string name="password">Password</string>
-    <string name="password_short">Password must be at least 6 characters</string>
-    <string name="passwords_mismatch">Passwords do not match</string>
-    <string name="permission_denied">Permission denied</string>
-    <string name="quantity">Quantity</string>
-    <string name="quantity_format">Qty: %d</string>
-    <string name="quantity_must_be_positive">Quantity must be at least 1</string>
-    <string name="register">Register</string>
-    <string name="registration_failed">Registration failed</string>
-    <string name="registration_successful">Registration successful</string>
-    <string name="save">Save</string>
-    <string name="search">Search</string>
-    <string name="sign_in">Sign In</string>
-    <string name="sign_up">Sign Up</string>
-    <string name="size">Size</string>
-    <string name="size_l">L</string>
-    <string name="size_m">M</string>
-    <string name="size_s">S</string>
-    <string name="size_xl">XL</string>
-    <string name="size_xs">XS</string>
-    <string name="size_xxl">XXL</string>
-    <string name="sleepwear">Sleepwear</string>
-    <string name="sportswear">Sportswear</string>
-    <string name="storage_permission_required">Storage permission is required to select images</string>
-    <string name="swimwear">Swimwear</string>
-    <string name="take_photo">Take Photo</string>
-    <string name="topwear">Topwear</string>
-    <string name="total_items">Total Items</string>
-    <string name="total_quantity">Total Quantity</string>
-    <string name="username">Username</string>
-    <string name="username_short">Username must be at least 3 characters</string>
-    <string name="username_taken">Username already exists</string>
-    <string name="yes">Yes</string>
-    <style name="Theme.CountWearables" parent="Theme.Material3.Light.NoActionBar">
+    <string name="accessories">SUB_MODULES</string>
+    <string name="add_first_item">INITIALIZE_FIRST_RECORD</string>
+    <string name="add_item">NEW_RECORD</string>
+    <string name="all">ALL_SECTORS</string>
+    <string name="already_have_account">EXISTING_OPERATOR_RETURN</string>
+    <string name="app_name">COUNT_WEARABLES</string>
+    <string name="bottomwear">LOWER_GEAR</string>
+    <string name="camera_permission_required">OPTIC_SENSOR_ACCESS_REQUIRED</string>
+    <string name="cancel">ABORT_OPERATION</string>
+    <string name="category">SECTOR_CLASSIFICATION</string>
+    <string name="choose_from_gallery">ACCESS_IMAGE_ARCHIVE</string>
+    <string name="color">CHROMA_VALUE</string>
+    <string name="confirm_delete">CONFIRM_PURGE_OF_RECORD?</string>
+    <string name="confirm_password">CONFIRM_SECURE_PHRASE</string>
+    <string name="date_added">TIMESTAMP_INITIALIZED</string>
+    <string name="delete">PURGE_RECORD</string>
+    <string name="delete_confirmation">WARNING: THIS_ACTION_IS_IRREVERSIBLE</string>
+    <string name="description">SPECIFICATIONS</string>
+    <string name="don_t_have_account">REGISTER_NEW_OPERATOR</string>
+    <string name="dresses">FULL_BODY_SUITS</string>
+    <string name="edit">MODIFY_RECORD</string>
+    <string name="field_required">REQUIRED_DATA_MISSING</string>
+    <string name="filter">FILTER_CHROMA</string>
+    <string name="footwear">STABILIZERS</string>
+    <string name="forgot_password">RECOVER_CREDENTIALS</string>
+    <string name="invalid_credentials">INVALID_OPERATOR_CREDENTIALS</string>
+    <string name="item_deleted">RECORD_PURGED</string>
+    <string name="item_name">IDENTIFIER_NAME</string>
+    <string name="item_saved">DATA_COMMITTED_SUCCESSFULLY</string>
+    <string name="login">INITIALIZE_SESSION</string>
+    <string name="login_failed">AUTHENTICATION_DENIED</string>
+    <string name="login_successful">AUTHENTICATION_GRANTED</string>
+    <string name="logout">DISCONNECT</string>
+    <string name="my_wardrobe">WARDROBE_DATABASE</string>
+    <string name="no">ABORT</string>
+    <string name="no_items">DATABASE_EMPTY</string>
+    <string name="notes">METADATA_NOTES</string>
+    <string name="one_size">UNI-SCALE</string>
+    <string name="other">UNCATEGORIZED</string>
+    <string name="outerwear">EXTERNAL_SHIELD</string>
+    <string name="password">SECURE_PHRASE</string>
+    <string name="password_short">SECURE_PHRASE_LENGTH_INSUFFICIENT</string>
+    <string name="passwords_mismatch">SECURE_PHRASE_MISMATCH</string>
+    <string name="permission_denied">ACCESS_DENIED</string>
+    <string name="quantity">UNIT_QUANTITY</string>
+    <string name="quantity_format">UNITS: %d</string>
+    <string name="quantity_must_be_positive">QUANTITY_MUST_EXCEED_ZERO</string>
+    <string name="register">REGISTER_NODE</string>
+    <string name="registration_failed">REGISTRATION_ERR</string>
+    <string name="registration_successful">OPERATOR_REGISTERED</string>
+    <string name="save">COMMIT_CHANGES</string>
+    <string name="search">SEARCH_SECTOR</string>
+    <string name="sign_in">ACCESS_TERMINAL</string>
+    <string name="sign_up">COMMIT_REGISTRATION</string>
+    <string name="size">DIMENSION_SCALE</string>
+    <string name="size_l">L-04</string>
+    <string name="size_m">M-03</string>
+    <string name="size_s">S-02</string>
+    <string name="size_xl">XL-05</string>
+    <string name="size_xs">XS-01</string>
+    <string name="size_xxl">XXL-06</string>
+    <string name="sleepwear">STASIS_GEAR</string>
+    <string name="sportswear">KINETIC_WEAR</string>
+    <string name="storage_permission_required">ARCHIVE_ACCESS_REQUIRED</string>
+    <string name="swimwear">AQUATIC_SUITS</string>
+    <string name="take_photo">ACTIVATE_OPTIC_SENSOR</string>
+    <string name="topwear">TOP_GEAR</string>
+    <string name="total_items">TOTAL_RECORDS</string>
+    <string name="total_quantity">TOTAL_UNITS</string>
+    <string name="username">OPERATOR_ID</string>
+    <string name="username_short">OPERATOR_ID_LENGTH_INSUFFICIENT</string>
+    <string name="username_taken">OPERATOR_ID_ALREADY_EXISTS</string>
+    <string name="yes">CONFIRM</string>
+    <style name="ShapeAppearance.CountWearables.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">4dp</item> 
+    </style>
+    <style name="Theme.CountWearables" parent="Theme.Material3.Dark.NoActionBar">
         
         <item name="colorPrimary">@color/primary</item>
-        <item name="colorPrimaryVariant">@color/primary_dark</item>
         <item name="colorOnPrimary">@color/text_on_primary</item>
-        
+        <item name="colorPrimaryContainer">@color/surface_variant</item>
+        <item name="colorOnPrimaryContainer">@color/primary</item>
+
         
         <item name="colorSecondary">@color/secondary</item>
-        <item name="colorSecondaryVariant">@color/secondary_dark</item>
-        <item name="colorOnSecondary">@color/text_on_secondary</item>
-        
-        
-        <item name="android:statusBarColor">@color/primary_dark</item>
-        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/surface_variant</item>
+        <item name="colorOnSecondaryContainer">@color/secondary</item>
         
         
         <item name="android:windowBackground">@color/background</item>
         <item name="android:colorBackground">@color/background</item>
-        
-        
         <item name="colorSurface">@color/surface</item>
         <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+
         
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+
         
         <item name="colorError">@color/error</item>
         <item name="colorOnError">@color/white</item>
+
+        
+        <item name="alertDialogTheme">@style/Theme.CountWearables.Dialog</item>
+        <item name="android:datePickerDialogTheme">@style/Theme.CountWearables.Dialog</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.CountWearables.Dialog</item>
     </style>
-    <style name="Theme.CountWearables.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="Theme.CountWearables.Dialog" parent="Theme.Material3.Dark.Dialog.Alert">
+        <item name="android:windowBackground">@color/surface</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.CountWearables.MediumComponent</item>
+    </style>
+    <style name="Widget.CountWearables.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">2dp</item>
     </style>
     <style name="Widget.CountWearables.Button.Primary" parent="Widget.Material3.Button">
         <item name="android:backgroundTint">@color/primary</item>
         <item name="android:textColor">@color/text_on_primary</item>
-        <item name="cornerRadius">12dp</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
     </style>
     <style name="Widget.CountWearables.Button.Secondary" parent="Widget.Material3.Button.TonalButton">
         <item name="android:backgroundTint">@color/surface_variant</item>
-        <item name="android:textColor">@color/text_primary</item>
-        <item name="cornerRadius">12dp</item>
+        <item name="android:textColor">@color/secondary</item>
+        <item name="cornerRadius">4dp</item>
+        <item name="strokeColor">@color/secondary</item>
+        <item name="strokeWidth">1dp</item>
     </style>
     <style name="Widget.CountWearables.CardView" parent="Widget.Material3.CardView.Filled">
         <item name="cardBackgroundColor">@color/surface</item>
-        <item name="cardCornerRadius">12dp</item>
-        <item name="cardElevation">2dp</item>
+        <item name="cardCornerRadius">4dp</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="strokeWidth">1dp</item>
     </style>
     <style name="Widget.CountWearables.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
         <item name="boxStrokeColor">@color/primary</item>
-        <item name="boxStrokeWidth">2dp</item>
-        <item name="boxCornerRadiusTopStart">8dp</item>
-        <item name="boxCornerRadiusTopEnd">8dp</item>
-        <item name="boxCornerRadiusBottomStart">8dp</item>
-        <item name="boxCornerRadiusBottomEnd">8dp</item>
-        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxCornerRadiusTopStart">2dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">2dp</item>
+        <item name="hintTextColor">@color/primary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
     </style>
     <style name="Widget.CountWearables.Toolbar" parent="Widget.Material3.Toolbar">
-        <item name="android:background">@color/primary</item>
-        <item name="titleTextColor">@color/text_on_primary</item>
-        <item name="navigationIconTint">@color/text_on_primary</item>
+        <item name="android:background">@color/background</item>
+        <item name="titleTextColor">@color/primary</item>
+        <item name="navigationIconTint">@color/primary</item>
     </style>
 </resources>

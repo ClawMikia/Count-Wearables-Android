@@ -2161,6 +2161,7 @@ int color primary 0x7f0502fe
 int color primary_dark 0x7f0502ff
 int color primary_dark_material_dark 0x7f050300
 int color primary_dark_material_light 0x7f050301
+int color primary_glow 0x7f050325
 int color primary_light 0x7f050302
 int color primary_material_dark 0x7f050303
 int color primary_material_light 0x7f050304
@@ -2172,6 +2173,7 @@ int color ripple_material_dark 0x7f050309
 int color ripple_material_light 0x7f05030a
 int color secondary 0x7f05030b
 int color secondary_dark 0x7f05030c
+int color secondary_glow 0x7f050326
 int color secondary_light 0x7f05030d
 int color secondary_text_default_material_dark 0x7f05030e
 int color secondary_text_default_material_light 0x7f05030f
@@ -2179,6 +2181,7 @@ int color secondary_text_disabled_material_dark 0x7f050310
 int color secondary_text_disabled_material_light 0x7f050311
 int color success 0x7f050312
 int color surface 0x7f050313
+int color surface_bright 0x7f050327
 int color surface_variant 0x7f050314
 int color switch_thumb_disabled_material_dark 0x7f050315
 int color switch_thumb_disabled_material_light 0x7f050316
@@ -2186,7 +2189,11 @@ int color switch_thumb_material_dark 0x7f050317
 int color switch_thumb_material_light 0x7f050318
 int color switch_thumb_normal_material_dark 0x7f050319
 int color switch_thumb_normal_material_light 0x7f05031a
+int color tertiary 0x7f050328
+int color tertiary_dark 0x7f050329
 int color text_hint 0x7f05031b
+int color text_neon_cyan 0x7f05032a
+int color text_neon_pink 0x7f05032b
 int color text_on_primary 0x7f05031c
 int color text_on_secondary 0x7f05031d
 int color text_primary 0x7f05031e
@@ -4596,6 +4603,7 @@ int style RtlOverlay_Widget_AppCompat_Search_DropDown_Text 0x7f110171
 int style RtlOverlay_Widget_AppCompat_SearchView_MagIcon 0x7f110172
 int style RtlUnderlay_Widget_AppCompat_ActionButton 0x7f110173
 int style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow 0x7f110174
+int style ShapeAppearance_CountWearables_MediumComponent 0x7f110483
 int style ShapeAppearance_M3_Comp_Badge_Large_Shape 0x7f110175
 int style ShapeAppearance_M3_Comp_Badge_Shape 0x7f110176
 int style ShapeAppearance_M3_Comp_BottomAppBar_Container_Shape 0x7f110177
@@ -4801,7 +4809,7 @@ int style Theme_AppCompat_Light_DialogWhenLarge 0x7f11023e
 int style Theme_AppCompat_Light_NoActionBar 0x7f11023f
 int style Theme_AppCompat_NoActionBar 0x7f110240
 int style Theme_CountWearables 0x7f110241
-int style Theme_CountWearables_NoActionBar 0x7f110242
+int style Theme_CountWearables_Dialog 0x7f110484
 int style Theme_Design 0x7f110243
 int style Theme_Design_BottomSheetDialog 0x7f110244
 int style Theme_Design_Light 0x7f110245
@@ -5071,6 +5079,7 @@ int style Widget_AppCompat_Toolbar 0x7f11034c
 int style Widget_AppCompat_Toolbar_Button_Navigation 0x7f11034d
 int style Widget_Compat_NotificationActionContainer 0x7f11034e
 int style Widget_Compat_NotificationActionText 0x7f11034f
+int style Widget_CountWearables_Button_Outlined 0x7f110485
 int style Widget_CountWearables_Button_Primary 0x7f110350
 int style Widget_CountWearables_Button_Secondary 0x7f110351
 int style Widget_CountWearables_CardView 0x7f110352

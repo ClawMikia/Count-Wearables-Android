@@ -94,11 +94,14 @@ class AddEditItemActivity : AppCompatActivity() {
         binding = ActivityAddEditItemBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Setup Toolbar
+        setSupportActionBar(binding.toolbar)
+        binding.toolbar.setNavigationOnClickListener { finish() }
+
         // Check if editing or adding new item
         val itemId = intent.getLongExtra(EXTRA_ITEM_ID, -1)
         if (itemId != -1L) {
             // Edit mode
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
             binding.btnDelete.visibility = View.VISIBLE
             clothingViewModel.getItemById(itemId)
         }

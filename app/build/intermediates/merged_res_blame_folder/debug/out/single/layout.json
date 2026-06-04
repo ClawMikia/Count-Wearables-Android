@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.countwearables.app-mergeDebugResources-47:/layout/activity_add_edit_item.xml",
-        "source": "com.countwearables.app-main-50:/layout/activity_add_edit_item.xml"
+        "merged": "com.countwearables.app-mergeDebugResources-47:/layout/activity_detail.xml",
+        "source": "com.countwearables.app-main-50:/layout/activity_detail.xml"
     },
     {
         "merged": "D:\\.gradle\\daemon\\8.2\\com.countwearables.app-mergeDebugResources-47:\\layout\\activity_detail.xml",
