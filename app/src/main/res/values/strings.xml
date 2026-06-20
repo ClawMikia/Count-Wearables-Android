@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">COUNT_WEARABLES</string>
+    <string name="app_name">Count Wearables</string>
     <string name="quantity_format">UNITS: %d</string>
     
     <!-- Auth Strings -->
